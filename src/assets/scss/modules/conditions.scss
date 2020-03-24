@@ -3,10 +3,17 @@
   background-repeat: no-repeat;
   background-position: top center;
   background-size: contain;
+  @media(max-width: $smDesktopWidth) {
+    background-size: 100% 77%;
+  } 
+  
   .container {
     @include flex(row, center,flex-start);
     padding: 50px 100px 0 100px;
     flex-wrap: wrap;
+    @media(max-width: $tableWidth) {
+      padding: 50px 30px 0 30px;
+    }
   }
   &__title {
     width: 100%;
@@ -26,12 +33,18 @@
     font-weight: 100;
     letter-spacing: 1.5px;
     line-height: rem(22);
+    @media(max-width: $tableWidth  ) {
+      letter-spacing: 0;
+    }
   }
 
   
   &__info {
     width: 50%;
     font-family: Muller;
+    @media(max-width: $tableWidth  ) {
+      width: 58%;
+    }
   }
   &__text {
     margin-top: 20px;
@@ -42,9 +55,15 @@
     margin-top: 20px;
     font-size: rem(12);
     text-decoration: none;
+    @media(max-width: $tableWidth  ) {
+      font-size: rem(16);
+    }
   }
   &__ul2 {
     margin-left: 50px;
+    @media(max-width: $tableWidth  ) {
+      margin-left: 20px;
+    }
   }
   &__li{
     position: relative;
@@ -66,6 +85,9 @@
 
   &__slogan{
     width: 50%;
+    @media(max-width: $tableWidth  ) {
+      width: 42%;
+    }
     &-text{
       font-family: Maloishe;
       width: min-content;
@@ -76,6 +98,9 @@
       letter-spacing: 3px;
       line-height: rem(55);
       transform: rotate(-22deg);
+      @media(max-width: $tableWidth  ) {
+        width: auto;
+      }
     }
   }
 
@@ -86,6 +111,12 @@
     position: relative;
     top: -250px;
     height: 0;
+    @media(max-width: $smDesktopWidth) {
+      top: -16vh;
+    }
+    @media(max-width: $tableWidth  ) {
+      top: -10vh;
+    }
   }
   &__btn{
     color: $mainFontColor;
@@ -94,5 +125,8 @@
     margin-top: 40px;
     @include flex(column-reverse, flex-start,flex-start);
     color: $mainFontColorDark;
+    @media(max-width: $tableWidth  ) {
+      margin-top: 10px;
+    }
   }
 }

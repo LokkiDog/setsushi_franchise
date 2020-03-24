@@ -6,6 +6,12 @@
     font-weight: 500;
     font-size: rem(30);
     padding: 40px 0px;
+    @media(max-width: 1200px) {
+      @include flex(row, space-around, flex-start);
+    }
+    @media(max-width: $smDesktopWidth) {
+      font-size: rem(25);
+    }
   }
   &__li:hover{
     color: darken($mainFontColor, 20%);

@@ -6,21 +6,43 @@
     @include flex(row, center, center);
     position: relative;
     margin-top: 50px;
+    @media(max-width: $tableWidth) {
+      @include flex(column, center, center);
+    }
   }
   .reviews__slide{
     max-width: 600px;
     margin: 0;
+    @media(max-width: $tableWidth) {
+      max-width: 90%;
+      margin: auto;
+    }
     &--left{
       margin-right: 70px;
+      @media(max-width: $tableWidth) {
+        margin: 15px 0;
+      }
     }
     &--center {
       max-width: 550px;
       margin: 0;
       margin-top: -45px;
       position: absolute;
+      @media(max-width: $smDesktopWidth) { 
+        max-width: 375px;
+      }
+      @media(max-width: $tableWidth) {
+        max-width: 90%;
+        margin: 15px 0;
+        position: static;
+      }
+
     }
     &--right{
       margin-left: 70px;
+      @media(max-width: $tableWidth) {
+        margin: 15px 0;
+      }
     }
   }
 }
