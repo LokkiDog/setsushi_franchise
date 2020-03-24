@@ -14,6 +14,10 @@
     @media(max-width: $tableWidth) {
       padding: 50px 30px 0 30px;
     }
+    @media(max-width: $phoneWidth) {
+      @include flex(column, center,center);
+      padding: 50px 0 0 0;
+    }
   }
   &__title {
     width: 100%;
@@ -25,6 +29,12 @@
     font-size: rem(35);
     font-weight: 800;
     letter-spacing: 0;
+
+    @media(max-width: $phoneWidth) {
+      text-align: center;
+      margin-left: 0;
+      margin: auto
+    }
   }
   &__descr {
     width: 100%;
@@ -36,27 +46,40 @@
     @media(max-width: $tableWidth  ) {
       letter-spacing: 0;
     }
+    @media(max-width: $phoneWidth) {
+      font-size: rem(16);
+    }
   }
 
   
   &__info {
     width: 50%;
     font-family: Muller;
-    @media(max-width: $tableWidth  ) {
+    @media(max-width: $tableWidth) {
       width: 58%;
+    }
+    @media(max-width: $phoneWidth) {
+      width: 90% !important;
+      margin: auto;
     }
   }
   &__text {
     margin-top: 20px;
     font-size: rem(12);
+    @media(max-width: $phoneWidth) {
+      font-size: rem(18);
+    }
   }
   &__ul1,
   &__ul2 {
     margin-top: 20px;
     font-size: rem(12);
     text-decoration: none;
-    @media(max-width: $tableWidth  ) {
+    @media(max-width: $tableWidth) {
       font-size: rem(16);
+    }
+    @media(max-width: $phoneWidth) {
+      font-size: rem(18);
     }
   }
   &__ul2 {
@@ -78,7 +101,15 @@
         width: 14px;
         border-radius: 100px;
         background-color: rgb(248, 185, 50);
+
+        @media(max-width: $phoneWidth) {
+          height: 12px;
+          width: 12px;
+        }
       }
+    }
+    @media(max-width: $phoneWidth) {
+      margin-top: 5px;
     }
   }
   
@@ -87,6 +118,10 @@
     width: 50%;
     @media(max-width: $tableWidth  ) {
       width: 42%;
+    }
+    @media(max-width: $phoneWidth) {
+      width: 90% !important;
+      margin: auto;
     }
     &-text{
       font-family: Maloishe;
@@ -100,6 +135,13 @@
       transform: rotate(-22deg);
       @media(max-width: $tableWidth  ) {
         width: auto;
+      }
+      @media(max-width: $phoneWidth) { 
+        width: 100%;
+        transform: rotate(0deg);
+        text-align: center;
+        margin-top: 60px;
+        font-size: rem(65);
       }
     }
   }
@@ -117,6 +159,13 @@
     @media(max-width: $tableWidth  ) {
       top: -10vh;
     }
+    @media(max-width: $phoneWidth) { 
+      top: 0 !important;
+      height: auto;
+      width: 90%;
+      margin: auto;
+      text-align: center;
+    }
   }
   &__btn{
     color: $mainFontColor;
@@ -127,6 +176,11 @@
     color: $mainFontColorDark;
     @media(max-width: $tableWidth  ) {
       margin-top: 10px;
+    }
+    @media(max-width: $phoneWidth) { 
+      @include flex(column-reverse,center,center);
+      margin-top: 60px;
+
     }
   }
 }

@@ -8,6 +8,30 @@
       overflow: visible;
       height: 280px;
       margin-left: -190px;
+      @media(max-width: $phoneWidth) {
+        display: none;
+      }
+    }
+    &--top {
+      @media(max-width: $phoneWidth) {
+        overflow: hidden;
+        background-color: black;
+      }
+    }
+    &-img {
+      @media(max-width: $phoneWidth) {
+        max-width: unset;
+        width: 646px;
+        margin-right: 80%;
+      }
+    }
+    
+  }
+
+  &__steps{
+    @media(max-width: $phoneWidth) {
+      max-width: 90%;
+      margin: auto;
     }
   }
 }

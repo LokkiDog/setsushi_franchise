@@ -1,20 +1,54 @@
 .menu {
   @include flex(row,space-between, center);
   &__ul{
-    @include flex(row,space-between, center);
     text-transform: uppercase;
     font-weight: 500;
     font-size: rem(30);
     padding: 40px 0px;
-    @media(max-width: 1200px) {
+    @include flex(row,space-between, center);
+    
+    @media (max-width: $w1200px) {
       @include flex(row, space-around, flex-start);
     }
-    @media(max-width: $smDesktopWidth) {
+    @media (max-width: $smDesktopWidth) {
       font-size: rem(25);
+    }
+    @media (max-width: $phoneWidth) {
+      display: none !important;
+    }
+  }
+  &__li {
+    @media (max-width: $phoneWidth) {
+    line-height: 35px;
     }
   }
   &__li:hover{
     color: darken($mainFontColor, 20%);
     transition: all 0.2s;
   }
+
+  &__burger {
+    display: none;
+    width: 40px;
+    margin: 10px 0 10px 20px;
+    cursor: pointer;
+    @media (max-width: $phoneWidth) {
+      display: block;
+    }
+  }
+  &__mob{
+    display: none;
+    position: absolute;
+    width: 100%;
+    z-index: 100;
+    background: #ca291e;
+    &-ul {
+      @include flex(column,space-between, center);
+      padding: 20px 0;
+    }
+    .menu__li {
+      margin: 10px auto;
+    }
+  }
+  
 }

@@ -6,4 +6,7 @@
   letter-spacing: 0;
   font-weight: 700;
   text-transform: uppercase;
+  @media(max-width: $phoneWidth) { 
+    font-size: rem(45);
+  }
 }

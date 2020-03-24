@@ -9,6 +9,9 @@
     @media(max-width: $tableWidth) {
       @include flex(column, center, center);
     }
+    @media(max-width: $phoneWidth) { 
+      margin-top: 0;
+    }
   }
   .reviews__slide{
     max-width: 600px;
@@ -17,6 +20,7 @@
       max-width: 90%;
       margin: auto;
     }
+    
     &--left{
       margin-right: 70px;
       @media(max-width: $tableWidth) {

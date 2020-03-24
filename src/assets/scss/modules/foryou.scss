@@ -2,15 +2,36 @@
   padding: 0;
   background: #0c485e;
   margin-bottom: 150px;
+  z-index: 1;
+  @media(max-width: $phoneWidth) {
+    margin-bottom: 0;
+  }
+
   .container {
     @include flex(column, flex-start, center);
   }
   &__button {
     position: absolute;
     right: 1%;
-    bottom: -237px;
-
-
+    bottom: -237px; 
     @include flex(row, center, center);
+
+    &-img{
+      @media(max-width: $phoneWidth) {
+        display: none;
+      }
+    }
+    @media(max-width: $phoneWidth) {
+      position: static;
+    }
+  }
+
+  
+  &__btn{
+    @media(max-width: $phoneWidth) {
+      display: block;
+      position: relative;
+      margin: -1px 0 -25px 0;
+    }
   }
 }

@@ -1,6 +1,11 @@
 .trust {
   height: 360px;
   padding: 0;
+
+  @media(max-width: $phoneWidth) {
+    height: 430px;
+    margin-top: -26px;
+  }
   .container {
     background-image: url('/assets/img/trust.png');
     background-repeat: no-repeat;
@@ -11,6 +16,12 @@
   }
   &__info {
     padding-left: 50px;
+    @media(max-width: $phoneWidth) {
+      max-width: 90%;
+      margin: auto;
+      margin-top: 50px;
+      padding-left: 0;
+    }
   }
   &__title {
     margin: 20px 0;
@@ -30,6 +41,9 @@
     font-weight: 800;
     letter-spacing: 0;
     color: #e41212;
+    @media(max-width: $phoneWidth) {
+      font-size: rem(28);
+    }
     
   }
   &__text {
@@ -38,6 +52,12 @@
     max-width: 44%;
     font-family: Muller;
     letter-spacing: 0px;
+
+    @media(max-width: $phoneWidth) {
+      font-size: rem(18);
+      max-width: 90%;
+    }
+
     &:last-child{
       margin-bottom: 150px;
     }

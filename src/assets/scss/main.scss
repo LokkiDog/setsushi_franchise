@@ -106,20 +106,28 @@ section,
   }
 }
 
+.hidePhone{
+  display: block;
+}
+@media(max-width: $phoneWidth) {
+  .hidePhone{
+    display: none;
+  }
+}
 
 //Common
-@import "./common.scss";
+@import "./common";
 
 // Modules:
-@import "modules/header.scss";
-@import "modules/menu.scss";
-@import "modules/socials.scss";
-@import "modules/advantages.scss";
-@import "modules/foryou.scss";
-@import "modules/map.scss";
-@import "modules/trust.scss";
-@import "modules/conditions.scss";
-@import "modules/reviews.scss";
-@import "modules/footer.scss";
+@import "modules/header";
+@import "modules/menu";
+@import "modules/socials";
+@import "modules/advantages";
+@import "modules/foryou";
+@import "modules/map";
+@import "modules/trust";
+@import "modules/conditions";
+@import "modules/reviews";
+@import "modules/footer";
 
  

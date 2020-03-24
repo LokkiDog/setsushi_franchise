@@ -10,6 +10,10 @@
       flex-wrap: wrap;
       padding: 0 50px 40px 50px;
     }
+    @media(max-width: $phoneWidth) { 
+      @include flex(column, center, center);
+      padding: 0 0 40px 0;
+    }
   }
   &__column{
     max-width: 25%;
@@ -19,16 +23,26 @@
       max-width: 50%;
       margin-top: 20px;
     }
+    @media(max-width: $phoneWidth) { 
+      max-width: 90% !important; 
+    }
   }
   &__title{
     color: $mainFontColorDark;
     font-size: rem(20);
+    @media(max-width: $phoneWidth) {
+      font-size: rem(34);
+     }
   }
   &__ul{
     color: rgb(141, 141, 141);
     text-decoration: none;
     font-family: Muller;
     font-size: rem(16);
+    
+    @media(max-width: $phoneWidth) {
+      font-size: rem(28);
+     }
   }
   &__li:hover {
     color: darken(rgb(141, 141, 141), 10%);
