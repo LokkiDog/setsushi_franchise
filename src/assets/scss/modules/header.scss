@@ -1,10 +1,13 @@
 .header {
+  
   background-image: url('../img/header_bg.png');
   background-repeat: no-repeat;
-  background-position: top center;
-  background-size: contain;
+  background-position: center top;
+  background-size: cover;
+  margin-bottom: 50px;
 }
 .block-header {
+  position: relative;
   .container {
     @include flex(row,center,flex-start);
   };
@@ -22,20 +25,21 @@
 
   &__title {
     text-transform: uppercase;
-    font-size: rem(90);
+    font-size: rem(100);
     text-align: center;
     font-weight: 600;
     letter-spacing: 0;
-    line-height: rem(95);
+    line-height: rem(105);
   }
   &__subtitle { 
     margin-top: 20px;
 
-    font-size: rem(50);
+    font-family: Maloishe;
+    font-size: rem(70);
     text-align: center;
-    font-weight: 600;
-    letter-spacing: 10px;
-    line-height: rem(55);
+    font-weight: 500;
+    letter-spacing: 3px;
+    line-height: rem(65);
   }
 
   &__btn{
@@ -47,14 +51,20 @@
     margin-top: 25px;
   }
   &__descr{
+    position: absolute;
+    bottom: -50px;
+    right: 0;
     justify-self: end;
-    margin-top: 80px;
-
+    font-family: Muller;
     text-align: right;
     color: $mainFontColorDark;
     &-title {
-      font-size: rem(40);
-
+      font-size: rem(35);
+      text-transform: uppercase;
+    }
+    &-text {
+      font-size: rem(20);
+      letter-spacing: 1px;
     }
   }
 }

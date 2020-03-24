@@ -32,7 +32,6 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   @include link_a(inherit);
-  
 }
 
 *,
@@ -95,7 +94,7 @@ section,
   flex: 0 0 auto;
   position: relative;
   margin: 0 auto;
-  max-width: $desktopWidth;
+  max-width: 1140px;
   @media screen and (max-width: $smDesktopWidth) {
     max-width: $tableWidth;
   }
@@ -120,5 +119,7 @@ section,
 @import "modules/map.scss";
 @import "modules/trust.scss";
 @import "modules/conditions.scss";
+@import "modules/reviews.scss";
+@import "modules/footer.scss";
 
  

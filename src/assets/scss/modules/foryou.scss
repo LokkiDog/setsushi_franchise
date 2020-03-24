@@ -7,8 +7,9 @@
   }
   &__button {
     position: absolute;
-    right: 62px;
-    bottom: -35%;
+    right: 1%;
+    bottom: -237px;
+
 
     @include flex(row, center, center);
   }

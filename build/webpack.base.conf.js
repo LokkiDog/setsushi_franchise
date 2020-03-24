@@ -21,7 +21,8 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
     path: PATHS.dist,
-    publicPath: '//sasha-izvekov.ru/setsushi-franchise/'
+    publicPath: '/'
+    // //sasha-izvekov.ru/setsushi-franchise/
   },
   optimization: {
     splitChunks: {
@@ -123,7 +124,7 @@ module.exports = {
     }),
     new CopyWebpackPlugin([
       { from: `${PATHS.src}/${PATHS.assets}img`, to: `${PATHS.assets}img`},
-      { from: `${PATHS.src}/${PATHS.assets}fonts`, to: `${PATHS.assets}fonts`},
+      { from: `${PATHS.src}/fonts`, to: `${PATHS.assets}fonts`},
       { from: `${PATHS.src}/static`, to: ''},
     ]),
     new VueLoaderPlugin(),
