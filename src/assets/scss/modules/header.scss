@@ -103,6 +103,21 @@
       margin-top: 50px;
       order: 3;
     }
+    @media(max-width: $mdPhoneWidth ) {
+      flex-direction: column;
+      margin: auto;
+      margin-top: 34px;
+    }
+    .socials__separator{
+      @media(max-width: $mdPhoneWidth ) {
+        display: none;
+      }
+    }
+    .socials__phone {
+      @media(max-width: $mdPhoneWidth ) {
+        margin-top: 18px;
+      }
+    }
   }
   &__descr{
     position: absolute;
@@ -114,6 +129,9 @@
     color: $mainFontColorDark;
     @media(max-width: $smDesktopWidth) {
       right: 10px;
+    }
+    @media(max-width: $smDesktopWidth) {
+      right: auto;
     }
     &-title {
       font-size: rem(35);

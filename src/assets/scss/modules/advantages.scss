@@ -24,6 +24,9 @@
         width: 646px;
         margin-right: 80%;
       }
+      @media(max-width: $mdPhoneWidth ) {
+        margin-right: 87%;
+      }
     }
     
   }

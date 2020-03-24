@@ -21,7 +21,7 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
     path: PATHS.dist,
-    publicPath: '//sasha-izvekov.ru/setsushi-franchise/'
+    publicPath: '/'
     // //sasha-izvekov.ru/setsushi-franchise/
   },
   optimization: {
@@ -136,10 +136,10 @@ module.exports = {
       mode: 'webapp', // optional can be 'webapp' or 'light' - 'webapp' by default
       devMode: 'webapp', // optional can be 'webapp' or 'light' - 'light' by default 
       favicons: {
-        appName: 'My Site',
-        appDescription: 'My awesome App',
+        appName: 'Сет-Суши. Франшиза',
+        appDescription: 'Франшиза компании по приготовления и доставки азиатской еды.',
         developerName: 'Alexander',
-        developerURL: null, // prevent retrieving from the nearest package.json
+        developerURL: 'https://github.com/IzvekovWeb', // prevent retrieving from the nearest package.json
         background: '#ddd',
         theme_color: '#333',
         icons: {

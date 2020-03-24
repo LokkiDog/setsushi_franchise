@@ -1,7 +1,7 @@
 {
-  "name": "webpack_template",
+  "name": "setsushi_franchise",
   "version": "1.0.0",
-  "description": "My template",
+  "description": "Сайт франшизы Сет-Суши",
   "main": "index.js",
   "scripts": {
     "dev": "webpack-dev-server --open --config ./build/webpack.dev.conf.js",
