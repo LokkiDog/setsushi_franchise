@@ -1,0 +1,42 @@
+.trust {
+  height: 450px;
+  padding: 0;
+  .container {
+    background-image: url('/assets/img/trust.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center;
+    box-sizing: border-box;
+    padding: 1px 0;
+  }
+  &__info {
+    padding-left: 50px;
+  }
+  &__title {
+    margin: 20px 0;
+    text-transform: uppercase;
+    font-size: rem(30);
+    font-weight: 800;
+    letter-spacing: 0;
+    text-align: left;
+    color: $mainFontColor;
+  }
+  &__subtitle {
+    
+    margin: 10px 0;
+    text-transform: uppercase;
+    font-size: rem(22);
+    font-weight: 800;
+    letter-spacing: 0;
+    color: #ca0d0d;
+    
+  }
+  &__text {
+    font-size: rem(16);
+    margin-bottom: 10px;
+    max-width: 44%;
+    &:last-child{
+      margin-bottom: 150px;
+    }
+  }
+}

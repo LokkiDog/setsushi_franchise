@@ -10,6 +10,8 @@ html {
   font-size: $mainFontSize;
   color: $mainFontColor;
   height: 100%;
+  scroll-behavior: smooth;
+  
   @media screen and (max-width: $desktopWidth) {
     font-size: 16px;
   }
@@ -29,6 +31,8 @@ body {
   font-weight: $mainFontWeight;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include link_a(inherit);
+  
 }
 
 *,
@@ -103,10 +107,18 @@ section,
   }
 }
 
-// Modules:
-@import "modules/header.scss";
 
 //Common
 @import "./common.scss";
 
+// Modules:
+@import "modules/header.scss";
+@import "modules/menu.scss";
+@import "modules/socials.scss";
+@import "modules/advantages.scss";
+@import "modules/foryou.scss";
+@import "modules/map.scss";
+@import "modules/trust.scss";
+@import "modules/conditions.scss";
 
+ 

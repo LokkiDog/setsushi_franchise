@@ -1,0 +1,13 @@
+.advantages {
+  padding-bottom: 0;
+  z-index: 2;
+  @include flex(column, center,center);
+  &__img {
+    @include flex(column, center,center);
+    &--bottom {
+      overflow: visible;
+      height: 280px;
+      margin-left: -190px;
+    }
+  }
+}

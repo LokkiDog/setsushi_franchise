@@ -1,0 +1,15 @@
+.foryou {
+  padding: 0;
+  background: #0c485e;
+  margin-bottom: 150px;
+  .container {
+    @include flex(column, flex-start, center);
+  }
+  &__button {
+    position: absolute;
+    right: 62px;
+    bottom: -35%;
+
+    @include flex(row, center, center);
+  }
+}

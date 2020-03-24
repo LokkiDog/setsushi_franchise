@@ -1,6 +1,9 @@
 .title {
   margin-bottom: 20px;
-  color: #333333;
-  font-size: 30px;
+  color: $mainFontColorDark;
+  font-size: rem(25);
+  text-align: center;
+  letter-spacing: 0;
   font-weight: 700;
+  text-transform: uppercase;
 }

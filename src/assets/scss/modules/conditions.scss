@@ -1,0 +1,95 @@
+.conditions {
+  background-image: url('../img/conditions_bg.png');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: contain;
+  .container {
+    @include flex(row, center,flex-start);
+    padding: 50px 100px 0 100px;
+    flex-wrap: wrap;
+  }
+  &__title {
+    width: 100%;
+    margin: 20px 0;
+    text-align: left;
+    margin-left: 240px;
+    color: $mainFontColor;
+    text-transform: uppercase;
+    font-size: rem(30);
+    font-weight: 800;
+    letter-spacing: 0;
+  }
+  &__descr {
+    width: 100%;
+    font-size: rem(20);
+    font-weight: 100;
+    letter-spacing: 2.5px;
+    line-height: rem(24);
+  }
+
+  
+  &__info {
+    width: 50%;
+  }
+  &__text {
+    margin-top: 20px;
+    font-size: rem(14);
+  }
+  &__ul1,
+  &__ul2 {
+    margin-top: 20px;
+    font-size: rem(16);
+    text-decoration: none;
+  }
+  &__ul2 {
+    margin-left: 50px;
+  }
+  &__li{
+    position: relative;
+    &--circle {
+      padding-left: 22px;
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: calc(50% - 7px);
+        height: 14px;
+        width: 14px;
+        border-radius: 100px;
+        background-color: rgb(248, 185, 50);
+      }
+    }
+  }
+  
+
+  &__slogan{
+    width: 50%;
+    &-text{
+      width: min-content;
+      margin-top: 90px;
+      font-size: rem(40);
+      text-align: center;
+      font-weight: 600;
+      letter-spacing: 10px;
+      line-height: rem(55);
+      transform: rotate(-22deg);
+    }
+  }
+
+
+  &__contacts{
+    margin-left: 0;
+    width: 100%;
+    position: relative;
+    top: -250px;
+    height: 0;
+  }
+  &__btn{
+    color: $mainFontColor;
+  }
+  &__socials {
+    margin-top: 40px;
+    @include flex(column-reverse, flex-start,flex-start);
+    color: $mainFontColorDark;
+  }
+}
