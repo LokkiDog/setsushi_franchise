@@ -21,7 +21,8 @@ module.exports = {
   output: {
     filename: `${PATHS.assets}js/[name].[hash].js`,
     path: PATHS.dist,
-    publicPath: '/'
+    publicPath: '//fr.setsushi.ru/'
+    // //fr.setsushi.ru/
     // //sasha-izvekov.ru/setsushi-franchise/
   },
   optimization: {

@@ -3,9 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  
-  <title>Суши-сет. Франшиза</title>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> 
+  <title>Суши-сет. Франшиза</title> 
 </head>
 <body>
   
@@ -18,7 +17,7 @@
             <li class="menu__li"><a href="#" class="menu__a">франшиза</a></li>
             <li class="menu__li"><a href="#advantages" class="menu__a">почему мы</a></li>
             <li class="menu__li"><a href="#foryou" class="menu__a">вы получаете</a></li>
-            <li class="menu__li"><a href="#map" class="menu__a">зоны открытия</a></li>
+            <li class="menu__li"><a href="https://yandex.ru/maps/?um=constructor%3Ac68475418170462b4b123ed625a2d5874cab3861d291aefa5001b63f213fabaa&source=constructorLink" class="menu__a">зоны открытия</a></li>
             <li class="menu__li"><a href="#trust" class="menu__a">бренд</a></li>
             <li class="menu__li"><a href="#conditions" class="menu__a">условия</a></li>
             <li class="menu__li"><a href="#reviews" class="menu__a">франчайзи о нас</a></li>
@@ -58,17 +57,17 @@
           <div class="block-header__right">
             <h1 class="block-header__title">франшиза</h1>
             <h2 class="block-header__subtitle">Зарабатывай <br> вместе с нами</h2>
-            <button class="btn btn--warning block-header__btn">Получить бизнес-план</button>
+            <a href="buisnes_model.xlsx" class="btn btn--warning block-header__btn">Получить бизнес-план</a>
            
             <div class="socials block-header__socials">
               <div class="socials__links">
-                <a class="socials__link socials__link--vk" href="#">
+                <a class="socials__link socials__link--vk" href="https://vk.com/setsushi">
                   <img src="./assets/img/vk.png" alt="Social Link VK">
                 </a>
-                <a class="socials__link socials__link--inst" href="#">
+                <a class="socials__link socials__link--inst" href="https://www.instagram.com/franshiza.sushiset/">
                   <img src="./assets/img/inst.png" alt="Social Link Instagram">
                 </a>
-                <a class="socials__link socials__link--facebook" href="#">
+                <a class="socials__link socials__link--facebook" href="https://www.facebook.com/setsushi/">
                   <img src="./assets/img/facebook.png" alt="Social Link Facebook">
                 </a>
               </div>
@@ -120,15 +119,22 @@
           <img src="./assets/img/foryou.jpg" alt="Image SetSushi franchise">
         </div>
         <div class="foryou__button">
-          <button class="btn btn--danger foryou__btn">Стать партнёром</button>
+          <!-- <button class="btn btn--danger foryou__btn btn-modal">Стать партнёром</button> -->
+           
           <div class="foryou__button-img">
             <img src="./assets/img/foryou_sushi.png" alt="Image setsushi">
           </div>
+          <login-button class="btn--danger foryou__btn btn-modal"/>
+
         </div>
       </div>
       <!-- /.container -->
     </section>
     <!-- /.foryou -->
+ 
+    <div>
+      <notify-component />
+    </div> 
 
     <!-- <section class="map" id="map">
       <div class="container">
@@ -138,7 +144,7 @@
         </div>
       </div>
       /.container
-    </!--> -->
+    </!--> 
     <!-- /.map -->
 
     <section class="trust" id="trust">
@@ -212,22 +218,26 @@
         <!-- /.conditions__slogan -->
 
         <div class="conditions__contacts">
-          <button class="btn btn--warning conditions__btn">Стать партнёром</button>
+          
+          
+          <!-- <button class="btn ">Стать партнёром</button> -->
           <div class="socials conditions__socials">
             <div class="socials__links">
-              <a class="socials__link socials__link--vk" href="#">
+              <a class="socials__link socials__link--vk" href="https://vk.com/setsushi">
                 <img src="./assets/img/vk-black.png" alt="Social Link VK">
               </a>
-              <a class="socials__link socials__link--inst" href="#">
+              <a class="socials__link socials__link--inst" href="https://www.instagram.com/franshiza.sushiset/">
                 <img src="./assets/img/inst-black.png" alt="Social Link Instagram">
               </a>
-              <a class="socials__link socials__link--facebook" href="#">
+              <a class="socials__link socials__link--facebook" href="https://www.facebook.com/setsushi/">
                 <img src="./assets/img/facebook-black.png" alt="Social Link Facebook">
               </a>
             </div> 
             <div class="socials__phone">
               <a class="socials__phone-number" href="tel:88007074225">8 (800) 707-42-25</a>
             </div>
+            <login-button class="btn--warning conditions__btn btn-modal"/>
+
           </div>
           <!-- /.conditions__socials -->
 
@@ -259,18 +269,26 @@
       <!-- /.container -->
     </section>
     <!-- /.reviews -->
-    
 
+    <div class="popup">
+      <h1>
+        hey everyone !
+      </h1>
+      <span class="close">
+        <i class="fa fa-close"></i>
+      </span>
+    </div>
+  
     <footer class="footer">
       <div class="container">
         <div class="footer__column footer__column--product">
           <h4 class="title footer__title">наши продукты</h4>
           <ul class="footer__ul">
             <li class="footer__li">
-              <a href="">Меню</a>
+              <a href="https://setsushi.ru/type_category/sets/">Меню</a>
             </li>
             <li class="footer__li">
-              <a href="">Акции</a>
+              <a href="https://setsushi.ru/aktsii/">Акции</a>
             </li>
           </ul>
         </div>
@@ -279,7 +297,7 @@
           <h4 class="title footer__title">сервис</h4>
           <ul class="footer__ul">
             <li class="footer__li">
-              <a href="">Контроль качества</a>
+              <a href="https://setsushi.ru/sluzhba-kachestva/">Контроль качества</a>
             </li>
           </ul>
         </div>
@@ -288,10 +306,10 @@
           <h4 class="title footer__title">партнёрам</h4>
           <ul class="footer__ul">
             <li class="footer__li">
-              <a href="">Аренда</a>
+              <a href="https://setsushi.ru/forrent/">Аренда</a>
             </li>
             <li class="footer__li">
-              <a href="">Сотрудничество</a>
+              <a href="https://setsushi.ru/cooperation/">Сотрудничество</a>
             </li>
           </ul>
         </div>
@@ -300,10 +318,10 @@
           <h4 class="title footer__title">компания</h4>
           <ul class="footer__ul">
             <li class="footer__li">
-              <a href="">Новости</a>
+              <a href="https://setsushi.ru/novosti/">Новости</a>
             </li>
             <li class="footer__li">
-              <a href="">Карьера</a>
+              <a href="https://setsushi.ru/vakansii/">Карьера</a>
             </li>
           </ul>
         </div>
@@ -313,7 +331,13 @@
     </footer>
     <!-- /.footer -->
 
+    <div class="popup-button">
+      <login-button class="btn--danger foryou__btn btn-modal"/>
+    </div>
+
   </div>
   <!-- /.app -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+
 </body>
 </html>

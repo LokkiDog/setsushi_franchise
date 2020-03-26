@@ -17,6 +17,7 @@
     @include flex(row, center, center);
 
     &-img{
+      order: 2;
       @media(max-width: $phoneWidth) {
         display: none;
       }

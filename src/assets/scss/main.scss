@@ -115,6 +115,16 @@ section,
   }
 }
 
+.popup-button {
+  position: fixed;
+  bottom: 55px;
+  right: 40px;
+  z-index: 100;
+  @media(max-width: $phoneWidth) {
+    display: none;
+  }
+}
+
 //Common
 @import "./common";
 
