@@ -22,12 +22,12 @@
                     <p class="errorText" v-if="!$v.phone.required">Поле не может быть пустым!</p>
                     <p class="errorText" v-if="!$v.phone.email">Поле не похоже на телефон!</p>
                     <label>Телефон</label> 
-                    <input placeholder="+7 (777) 777-77-77"
+                    <input placeholder="7 (777) 777-77-77"
                         type="tel"
                         v-model="phone"
                         :class="{error: $v.phone.$error}"
                         @change="$v.phone.$touch()"
-                        v-mask="'+7 (###) ###-##-##'"/>
+                        v-mask="'# (###) ###-##-##'"/>
                 </div> 
 
                 <!-- Email -->
