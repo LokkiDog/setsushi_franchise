@@ -27,12 +27,19 @@ Vue.component('notify-component', require('./components/UI/Notify.vue').default)
 Vue.component('login-button', require('./components/UI/controls/buttons/Login.vue').default)
 
 const app = new Vue({ 
-  // data() {
-  //   return {
-  //     modalView: false,
-  //     exampleComponent: false
-  //   }
-  // },
+  
   store,
-  el: '#app'
+  el: '#app',
+  data() {
+    return {
+      modal: false
+    }
+  },
+  methods: {
+    menuToggle(){
+      this.modal = !this.modal;
+      let mobMenu = document.getElementById('mob-menu');
+      mobMenu.style.display = (mobMenu.style.display == 'none') ? 'flex' : 'none';
+    }
+  }
 })

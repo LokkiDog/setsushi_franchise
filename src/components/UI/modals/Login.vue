@@ -83,7 +83,7 @@ export default {
         },
         phone: {
             required,
-            minLength: minLength(18)
+            minLength: minLength(17)
         }
     },
     methods: {

@@ -21,6 +21,7 @@
     @media (max-width: $phoneWidth) {
     line-height: 35px;
     }
+   
   }
   &__li:hover{
     color: darken($mainFontColor, 20%);
@@ -37,8 +38,8 @@
     }
   }
   &__mob{
-    display: none;
-    position: absolute;
+    position: sticky;
+    top: 0;
     width: 100%;
     z-index: 100;
     background: #ca291e;
@@ -48,6 +49,9 @@
     }
     .menu__li {
       margin: 10px auto;
+      &--first{
+        margin-bottom: 15px;
+      }
     }
   }
   

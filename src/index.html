@@ -22,17 +22,17 @@
             <li class="menu__li"><a href="#conditions" class="menu__a">условия</a></li>
             <li class="menu__li"><a href="#reviews" class="menu__a">франчайзи о нас</a></li>
           </ul> 
-          <div class="menu__burger" id="show-menu">
-            <img src="./assets/img/burger.png" alt="Menu burger">
+          <div class="menu__burger" >
+            <img src="./assets/img/burger.png" alt="Menu burger" id="show-menu" @click="menuToggle">
           </div>
         </div> 
       </nav>
       <!-- /.menu -->
 
-      <div class="menu__mob" id="mob-menu">
+      <div class="menu__mob" id="mob-menu" style="display: none;">
         <div class="container">
           <ul class="menu__mob-ul">
-            <li class="menu__li"><login-button class="btn--danger foryou__btn btn-modal"/></li>
+            <li class="menu__li menu__li--first"><login-button class="btn--danger foryou__btn btn-modal"/></li>
             <li class="menu__li"><a href="#advantages" class="menu__a close-menu">почему мы</a></li>
             <li class="menu__li"><a href="#foryou" class="menu__a close-menu">вы получаете</a></li>
             <li class="menu__li"><a href="#map" class="menu__a close-menu">зоны открытия</a></li>
@@ -338,6 +338,7 @@
   </div>
   <!-- /.app -->
   <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
-
+<script>
+</script>
 </body>
 </html>
