@@ -41,7 +41,7 @@
   },
   "dependencies": {
     "axios": "^0.19.2",
-    "minimist": "^1.2.5",
+    "minimist": "^1.2.6",
     "vue": "^2.6.11",
     "vue-the-mask": "^0.11.1",
     "vuelidate": "^0.7.5",
